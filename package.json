@@ -4,7 +4,10 @@
   "description": "FlightDeck is an opinionated starter project for Hugo.",
   "main": "index.js",
   "scripts": {
-
+    "start": "hugo serve --buildDrafts --buildFuture --environment development",
+    "build": "hugo --gc --minify --environment production",
+    "build:preview": " hugo --gc --environement production",
+    "images": "gulp images"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/ginfuru/flightdeck-go/issues"
   },
-  "homepage": "https://github.com/ginfuru/flightdeck-go#readme"
+  "homepage": "https://github.com/ginfuru/flightdeck-go#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "postcss-cli": "^7.1.0"
+  }
 }
