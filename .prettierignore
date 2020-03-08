@@ -1,4 +1,5 @@
 node_modules
+gulp_tasks
 
 layouts/_default/baseof.html
 layouts/partials/site/header.html
