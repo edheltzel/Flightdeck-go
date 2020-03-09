@@ -27,7 +27,6 @@
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "autoprefixer": "^9.7.4",
     "gulp": "^4.0.2",
-    "gulp-eslint": "^6.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-rsync": "0.0.8",
     "imagemin-mozjpeg": "^8.0.0",
