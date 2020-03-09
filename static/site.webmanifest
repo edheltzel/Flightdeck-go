@@ -1,7 +1,7 @@
 {
   "name": "Fightdeck Go",
   "short_name": "Flightdeck",
-  "description": "An opinionated starter project for Jekyll and Hugo"
+  "description": "An opinionated starter project for Jekyll and Hugo",
   "icons": [
     {
       "src": "/android-chrome-flightdeck-192x192.png",
