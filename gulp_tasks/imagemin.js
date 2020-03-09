@@ -8,9 +8,9 @@ const mozjpeg = require('imagemin-mozjpeg');
 
 gulp.task('imagemin', function() {
   return gulp
-    .src(config.assets + '/' + config.imagemin.src + '/**/*')
+    .src(config.paths.images + '/' + config.imagemin.src + '/**/*')
     .pipe(plumber())
-    .pipe(newer(config.assets + '/' + config.imagemin.dest))
+    .pipe(newer(config.paths.images + '/' + config.imagemin.dest))
     .pipe(
       imagemin({
         progressive: config.imagemin.progressive,
@@ -18,5 +18,5 @@ gulp.task('imagemin', function() {
         use: [pngquant(), mozjpeg()],
       })
     )
-    .pipe(gulp.dest(config.assets + '/' + config.imagemin.dest));
+    .pipe(gulp.dest(config.paths.images + '/' + config.imagemin.dest));
 });

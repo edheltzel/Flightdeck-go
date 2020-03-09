@@ -3,9 +3,9 @@ const gulp = require('gulp');
 const rsync = require('gulp-rsync');
 
 gulp.task('deploy', function() {
-  return gulp.src(config.jekyll.dest).pipe(
+  return gulp.src(config.hugo.dest).pipe(
     rsync({
-      root: config.jekyll.dest,
+      root: config.hugo.dest,
       hostname: config.deploy.remote,
       destination: config.deploy.root,
       recursive: true,
