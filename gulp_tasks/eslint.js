@@ -2,8 +2,8 @@ const config = require('../flightdeck.manifest.js');
 const eslint = require('gulp-eslint');
 const gulp = require('gulp');
 
-gulp.task('eslint', function() {
-  return gulp
+gulp.task('eslint', ()=>{
+  gulp
     .src([config.paths.assets + '/' + config.js.src + '/**/*.js', '!node_modules/**'])
     .pipe(eslint())
     .pipe(eslint.format())

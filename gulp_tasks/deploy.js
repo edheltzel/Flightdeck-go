@@ -2,8 +2,8 @@ const config = require('../flightdeck.manifest.js');
 const gulp = require('gulp');
 const rsync = require('gulp-rsync');
 
-gulp.task('deploy', function() {
-  return gulp.src(config.hugo.dest).pipe(
+gulp.task('deploy', () => {
+  gulp.src(config.hugo.dest).pipe(
     rsync({
       root: config.hugo.dest,
       hostname: config.deploy.remote,

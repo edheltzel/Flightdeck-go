@@ -8,7 +8,7 @@ const requireDir = require("require-dir");
 requireDir("./gulp_tasks", { recurse: true });
 
 const tasks = [];
-Object.keys(config.tasks).forEach(function(key) {
+Object.keys(config.tasks).forEach((key) => {
   if (config.tasks[key] && key != "eslint") {
     tasks.push(key == "webpack" && config.tasks.watch ? "_" + key : key);
   }
