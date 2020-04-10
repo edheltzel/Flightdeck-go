@@ -1,5 +1,4 @@
 // @ts-nocheck
-/* eslint-disable */
 
 const gulp = require('gulp');
 const requireDir = require('require-dir');

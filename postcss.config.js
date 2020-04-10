@@ -1,6 +1,4 @@
 // @ts-nocheck
-/* eslint-disable */
-
 module.exports = {
   plugins: [
     require('autoprefixer')({
