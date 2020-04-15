@@ -1,26 +1,22 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ .Site.BaseURL }}">{{ .Title }}</a>
 
-    {%- if page_paths -%}
       <nav class="site-nav">
         <input class="nav-trigger" id="nav-trigger" type="checkbox"/>
         <label for="nav-trigger">
           <span class="menu-icon">
-            {% include _components/svg.html %}
+            {{ partial "global/components/svg.html" . }}
           </span>
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
+          {{ range .Site.Menus.main }}
+            <a class="page-link" href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
         </div>
       </nav>
-    {%- endif -%}
+
   </div>
 </header>
