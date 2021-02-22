@@ -8,4 +8,27 @@
 </div>
 
 ## Prerequisites
-TODO
+Make sure that Hugo is installed by checking out the [Quick Start Guide](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) on the Hugo docs... make sure you're running the extended version.
+
+## Usage
+First things first, clone this repo:
+
+```shell
+git clone git@github.com:flight-deck/Flightdeck-go.git MY-HUGO-PROJECT && cd MY-HUGO-PROJECT
+```
+
+Then run the Node commands
+```shell
+yarn
+yarn start
+```
+**OR**
+
+```shell
+npm install
+npm start
+```
+
+
+> ### Disclaimer 
+> Flightdeck is a project scaffold and workflow for Hugo sites and apps. It **IS NOT**, a Hugo theme and **CANNOT** be dropped into the `/themes` directory.
