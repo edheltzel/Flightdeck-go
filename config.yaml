@@ -1,23 +1,19 @@
-baseURL: "http://example.org/"
-languageCode: en-us
-title: 'Flightdeck: A Scaffold for Hugo'
-params:
-  description: >
-    Flightdeck is a scaffold and starter project for Hugo that uses an opinionated modern front-end workflow.
+baseURL:                  "/"
+languageCode:             "en-us"
+title:                    "Flightdeck Go 🚀"
 
-# SEO Privacy
-googleAnalytics: UX-xxxxxx-xx
-enableRobotsTXT: true
+googleAnalytics:          UA-xxxxxx-xx
 
-disableRSS: true
-disableKinds: ["section", "taxonomy", "taxonomyTerm", "RSS"]
-disableHugoGeneratorInject: true
+enableRobotsTXT:          true
+
+disableRSS:               true
+disableKinds:             ["section", "taxonomy", "taxonomyTerm", "RSS"]
 
 privacy:
   googleAnalytics:
-    anonymizeIP: true
-    respectDoNotTrack: true
+    anonymizeIP:          true
+    respectDoNotTrack:    true
   twitter:
-    enableDNT: true
+    enableDNT:            true
   youtube:
-    privacyEnhanced: true
+    privacyEnhanced:      true
