@@ -37,7 +37,8 @@ function images(done) {
       imagemin.gifsicle({
         interlaced: true
       }),
-      imagemin.jpegtran({
+      imagemin.mozjpeg({
+        quality: 75,
         progressive: true
       }),
       imagemin.optipng({
